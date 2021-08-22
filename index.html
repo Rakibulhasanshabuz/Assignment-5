@@ -24,23 +24,23 @@
             <!-- memory section -->
             <section class="mb-4">
             <h3>Memory</h3>
-            <button type="button" class="btn btn-outline-secondary">8GB unifield memory</button>
+            <button id="memory-first-btn" type="button" class="btn btn-outline-secondary">8GB unifield memory</button>
             <button id="memory-second-btn" type="button" class="btn btn-outline-secondary">16GB unifield memory</button>
             </section>
     
             <!-- storage section -->
             <section class="mb-4">
             <h3>Storage</h3>
-            <button type="button" class="btn btn-outline-secondary">256GB SSD storage</button>
-            <button type="button" class="btn btn-outline-secondary">512GB SSD storage</button>
-            <button type="button" class="btn btn-outline-secondary">1 TB SSD storage</button>
+            <button id="storage-first-btn" type="button" class="btn btn-outline-secondary">256GB SSD storage</button>
+            <button id="storage-second-btn" type="button" class="btn btn-outline-secondary">512GB SSD storage</button>
+            <button id="storage-third-btn" type="button" class="btn btn-outline-secondary">1 TB SSD storage</button>
             </section>
     
             <!-- delivery option -->
             <section class="mb-4">
             <h3>Choose your delivery option</h3>
-            <button type="button" class="btn btn-outline-secondary">Friday, Aug 25 FREE Prime Delivery</button>
-            <button type="button" class="btn btn-outline-secondary">Friday, Aug 21 Delivery Charge $20</button>
+            <button id="delivery-first-btn" type="button" class="btn btn-outline-secondary">Friday, Aug 25 FREE Prime Delivery</button>
+            <button id="delivery-second-btn" type="button" class="btn btn-outline-secondary">Friday, Aug 21 Delivery Charge $20</button>
             </section>
     
     
@@ -56,15 +56,16 @@
                 </div>
                 <div class="d-flex">
                     <h5 class="price-gap3">Extra Storage Cost</h5>
-                    <h5>$<span>0</span></h5>
+                    <h5>$<span id="storage-cost">0</span></h5>
                 </div>
                 <div class="d-flex">
                     <h5 class="price-gap4">Delivery Charge</h5>
-                    <h5>$<span>0</span></h5>
+                    <h5>$<span id="delivery-cost">0</span></h5>
                 </div>
+                <hr>
                 <div class="d-flex">
                     <h5 class="price-gap5">Total Price</h5>
-                    <h5>$<span>1299</span></h5>
+                    <h5>$<span id="total-price">1299</span></h5>
                 </div>
             </section>
     
@@ -72,22 +73,21 @@
             <section>
                 <p>Add Pomo Code</p>
                  <div class="mb-4">
-                    <input class="border border-warning rounded border border-3 p-1" type="text">
-                    <button type="button" class="btn btn-success">Success</button>
+                    <input id="pomo-code" class="border border-warning rounded border border-3 p-1" type="text">
+                    <button id="pomo-btn" type="button" class="btn btn-success">Success</button>
                  </div>
             </section>
         </main>
-        </div>
-    
-        <div class="img-width">
-            <img width="100%" src="images/mac.png" alt="">
-        </div>
     </div>
+
+    <img class="w-50 h-50" src="images/mac.png" alt="">
+    </div>
+    <hr>
 
     <footer>
         <div class="d-flex justify-content-center">
-            <h4 class="price-gap6">Total :</h4>
-            <h4>$<span>1299</span></h4>
+            <h3 class="price-gap6">Total :</h3>
+            <h3>$<span id="main-total-price">1299</span></h3>
         </div>
     </footer>
 
